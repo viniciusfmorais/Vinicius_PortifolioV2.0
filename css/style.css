@@ -459,38 +459,47 @@ body.section-show .transition-mask:before{
 	color:#999;
 	font-family: 'Playfair Display', serif;
 	font-style:italic;
+
 }
 
 .front-person-img{
-	width:500px;
-	height:500px;
-	overflow:hidden;
-	background:#F0F0F0;	display: flex;
-    justify-content: center;
-	align-items: center;
-	position:relative;
-	z-index:15;
-	-webkit-transition:height .5s .3s ease, transform .5s .8s ease;
-	-moz-transition:height .5s .3s ease, transform .5s .8s ease;
-	transition:height .5s .3s ease, transform .5s .8s ease;
-	margin:200px auto;
-	margin-bottom:0;
-	-webkit-transform:rotate(45deg);
-	-moz-transform:rotate(45deg);
-	-ms-transform:rotate(45deg);
-	-o-transform:rotate(45deg);
-	transform:rotate(45deg);
-	border-radius:0;
-}
+		width:500px;
+		height:500px;
+		overflow:hidden;
+		background:#F0F0F0;	display: flex;
+		justify-content: center;
+		align-items: center;
+		position:relative;
+		z-index:15;
+		-webkit-transition:height .5s .3s ease, transform .5s .8s ease;
+		-moz-transition:height .5s .3s ease, transform .5s .8s ease;
+		transition:height .5s .3s ease, transform .5s .8s ease;
+		margin:200px auto;
+		margin-bottom:0;
+		-webkit-transform:rotate(45deg);
+		-moz-transform:rotate(45deg);
+		-ms-transform:rotate(45deg);
+		-o-transform:rotate(45deg);
+		transform:rotate(45deg);
+		border-radius:0;
+	}
 .front-person-img > img{
-	max-width:140%;
-	vertical-align:bottom;
-	-webkit-transform:rotate(-45deg) translateY(-5px);
-	-moz-transform:rotate(-45deg) translateY(-5px));
-	-ms-transform:rotate(-45deg) translateY(-5px));
-	-o-transform:rotate(-45deg) translateY(-5px));
-	transform:rotate(-45deg) translateY(-5px));
+		max-width:110%;
+		vertical-align:bottom;
+		-webkit-transform:rotate(-45deg) translateY(-5px);
+		-moz-transform:rotate(-45deg) translateY(-5px);
+		-ms-transform:rotate(-45deg) translateY(-5px);
+		-o-transform:rotate(-45deg) translateY(-5px);
+		transform:rotate(-45deg) translateY(-5px);
 }
+@media (max-width: 768px) {
+	.front-person-img > img {
+		width: 80%; /* Aumenta o tamanho da imagem para permitir o deslocamento */
+		height: 150%;
+		object-fit: cover; /* Faz a imagem preencher o quadrado */
+		transform: translateX(-20px) translateY(-10px); /* Movimenta a imagem no eixo X (horizontal) e Y (vertical) */
+	  }
+	}
 
 .front-person-titles{
 	position:relative;
@@ -1961,5 +1970,7 @@ body .symp-btn{
 		left:-40px;
 	}
 }
+
+
 
 

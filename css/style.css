@@ -1560,6 +1560,10 @@ body .symp-btn{
 }
 .portfolio-items > .item > .inner > img{
 	width:100%;
+	height: 250px;         /* Altura fixa para padronizar todas as imagens */
+	object-fit: cover;     /* Garante que a imagem preencha o espaço sem distorcer */
+	object-position: center; /* Centraliza a imagem no corte */
+	border-radius: 8px;    /* Opcional: arredonda as bordas para um visual mais agradável */
 }
 .portfolio-items > .item > .inner{
 	position:relative;

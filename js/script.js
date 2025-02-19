@@ -17,31 +17,55 @@ $(function(){
 		/*=========================================================================
 			Portfolio Grid
 		=========================================================================*/
-		var grid = $('#portfolio-grid');
-		grid.shuffle({
-			itemSelector: '.item'
-		});
-		
-		$('#portfolio-filters > ul > li > a').on('click', function (e) {
-			e.preventDefault();
-			var groupName = $(this).attr('data-group');
-			$('#portfolio-filters > ul > li > a').removeClass('active');
-			$(this).addClass('active');
-			grid.shuffle('shuffle', groupName );
-		});
-		
-		$('a.image-link').magnificPopup({
-			type: 'image',
-			removalDelay: 300,
-			mainClass: 'mfp-fade',
-			gallery: {
-				enabled: true
-			}
-		});
+		// Para o primeiro grid
+var grid1 = $('#portfolio-grid');
+grid1.shuffle({
+  itemSelector: '.item'
+});
+
+$('#portfolio-filters > ul > li > a').on('click', function (e) {
+  e.preventDefault();
+  var groupName = $(this).attr('data-group');
+  $('#portfolio-filters > ul > li > a').removeClass('active');
+  $(this).addClass('active');
+  grid1.shuffle('shuffle', groupName);
+});
+
+$('a.image-link').magnificPopup({
+  type: 'image',
+  removalDelay: 300,
+  mainClass: 'mfp-fade',
+  gallery: {
+    enabled: true
+  }
+});
+
+// Para o segundo grid
+var grid2 = $('#portfolio-grid2');
+grid2.shuffle({
+  itemSelector: '.item'
+});
+
+$('#portfolio-filters2 > ul > li > a').on('click', function (e) {
+  e.preventDefault();
+  var groupName = $(this).attr('data-group');
+  $('#portfolio-filters2 > ul > li > a').removeClass('active');
+  $(this).addClass('active');
+  grid2.shuffle('shuffle', groupName);
+});
+
+$('a.image-link').magnificPopup({
+  type: 'image',
+  removalDelay: 300,
+  mainClass: 'mfp-fade',
+  gallery: {
+    enabled: true
+  }
+});
 	
 	});
 	
-	
+
 	
 	/*=========================================================================
 		Links Navigation System

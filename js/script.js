@@ -195,3 +195,4 @@ if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
 
 // Insira a idade no elemento <p> com id "age"
 document.getElementById('age').textContent = `${age} Years`;
+

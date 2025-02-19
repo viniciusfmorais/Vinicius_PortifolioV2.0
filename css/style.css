@@ -1116,11 +1116,55 @@ body.section-show .transition-mask:before{
 	-moz-transition:all .3s ease-in-out;
 	transition:all .3s ease-in-out;
 	font-size:0;
-	background:#B7A389;
+	background:#b78989;
 	color:#FFF;
 	position:relative;
 	top:0;
 }
+
+
+.icon-link {
+	text-decoration: none; /* Remove sublinhado */
+	color: inherit; /* Mantém a cor original do ícone */
+	
+  }
+  
+  .icon-link i {
+	font-size: 40px; /* Tamanho do ícone */
+	color: inherit;  /* Mantém a cor original */
+	display:inline-block;
+	line-height:inherit;
+	height:inherit;
+	width:inherit;
+	-webkit-transform:rotate(-45deg);
+	-moz-transform:rotate(-45deg);
+	-ms-transform:rotate(-45deg);
+	-o-transform:rotate(-45deg);
+	transform:rotate(-45deg);
+}
+.icon-link:active {
+	color: inherit; /* Evita alteração de cor ao passar o mouse */
+  }
+
+.icon-link:visited {
+	color: inherit; /* Evita alteração de cor ao passar o mouse */
+  }
+.icon-link:focus {
+	color: inherit; /* Evita alteração de cor ao passar o mouse */
+  }
+  
+.icon-link:hover {
+	color: inherit; /* Evita alteração de cor ao passar o mouse */
+  }
+
+  .icon-link img {
+    width: 40px; 
+    height: 40px; 
+    transform: rotate(-45deg); /* Aplique rotação igual à outra imagem, se necessário */
+}
+
+  
+
 .service:hover > .icon{
 	top:-15px;
 }
@@ -1376,7 +1420,7 @@ body .symp-btn{
 	display:inline-block;
 	*display:inline;
 	*zoom:1;
-	padding:12px 22px;
+	padding:0;
 	background:#333;
 	color:#FFF;
 	-webkit-transition:all .3s ease;
@@ -1396,6 +1440,7 @@ body .symp-btn{
 }
 .symp-btn.link-btn > i{
 	margin-right:8px;
+	
 }
 .symp-btn.link-btn:hover{
 	color:#333;
@@ -1916,3 +1961,5 @@ body .symp-btn{
 		left:-40px;
 	}
 }
+
+
